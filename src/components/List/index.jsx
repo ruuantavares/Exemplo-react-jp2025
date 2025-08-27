@@ -1,10 +1,9 @@
 import "./style.css";
 
-function List({ titulo, exibirPrimeiraLista }) {
+function List({ titulo }) {
   return (
     <section>
-      <h2>{titulo}</h2>
-      {exibirPrimeiraLista ? <>exibirPrimeiraLista</> : null}
+      <h2>{titulo ? titulo : 'Aparece se não escrever algo no titulo'}</h2>
       <div>
         <h3>Lista não ordenada (ul)</h3>
         <ul>
